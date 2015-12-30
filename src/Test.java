@@ -1,5 +1,6 @@
 public class Test {
 
+	//枚举作为常量
 	enum Signal {
 		GREEN, YELLOW, RED
 	}
@@ -9,7 +10,7 @@ public class Test {
 		public Signal color = Signal.RED;
 
 		public Signal change() {
-			switch (color) {
+			switch (color) {//switch支持枚举
 			case RED:
 				color = Signal.GREEN;
 				break;
